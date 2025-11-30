@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0b0e;
+  --color-foreground: #f8fafc;
+  
+  --color-card: #0f172a;
+  --color-card-foreground: #f8fafc;
+  
+  --color-popover: #0f172a;
+  --color-popover-foreground: #f8fafc;
+  
+  --color-primary: #00d4ff;
+  --color-primary-foreground: #0a0b0e;
+  
+  --color-secondary: #10b981;
+  --color-secondary-foreground: #0a0b0e;
+  
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  
+  --color-accent: #1e293b;
+  --color-accent-foreground: #f8fafc;
+  
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #f8fafc;
+  
+  --color-border: #1e293b;
+  --color-input: #1e293b;
+  --color-ring: #00d4ff;
+  
+  --color-chart-1: #00d4ff;
+  --color-chart-2: #10b981;
+  --color-chart-3: #ef4444;
+  --color-chart-4: #f59e0b;
+  --color-chart-5: #a855f7;
+  
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+  
+  --color-brand-cyan: #00d4ff;
+  --color-brand-emerald: #10b981;
+  --color-brand-red: #ef4444;
+  --color-brand-amber: #f59e0b;
+  --color-brand-purple: #a855f7;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
